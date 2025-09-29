@@ -6,11 +6,16 @@ class Arachnids:
         self.lethal = lethal
         
     def is_spiders(self, species):
-        is_spider = False
+        is_spider_and_tarantula = False
+        daily_tarantula = [True, False, True, False]
+        daily_spider = [True, False, True, True]
         # TO DO: implement later 
         spider_species = ["Tarantula", "Black Widow", "Jumping Spider", "common spider"]
-        for spider in range(len(spider_species)):
+        for spider, tarantula in zip(daily_tarantula, daily_spider)):
             if self.species == spider:
-                return True
+                if self.species == tarantula
+                    return True
         return False 
-    
+    def is_scorpion(self, species):
+        is_scorpion = False
+        daily_arachnid 
