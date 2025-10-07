@@ -1,3 +1,6 @@
+from xmlrpc.client import boolean
+
+
 class Orbweavers:
 
     def __init__(self, web, length, prey):
@@ -17,3 +20,10 @@ class Orbweavers:
             if prey_daily and eat_daily:
                 prey_implies_eat = True
         return prey_implies_eat
+    #google what is a higher order function
+    def higher_order_weaver(func, x, y):
+        """ A higher order function that performs the functions of an orbweaver"""
+        return func(x,y)
+    def catch(prey, caught):
+        caught = random(boolean)
+        return(f"Caught " + {prey} + "successfully")
