@@ -1,11 +1,12 @@
 class Traveling:
-    def __init__(self, sightseeing, noob, event, experienced, music, attraction):
+    def __init__(self, sightseeing, noob, event, experienced, music, attraction, cost):
         self.sightseeing = sightseeing
         self.noob = noob
         self.event = event
         self.experienced = experienced
         self.music = music
         self.attraction = attraction
+        self.cost = cost 
     
     def tourists(self, sightseeing):
         if sightseeing:
@@ -15,3 +16,14 @@ class Traveling:
         else:
             return("Go home!")
     
+    def calculate_total(self, cost_a, cost_b, cost_c):
+        def helper_round_total(self, num):
+            last_digit = num % 10
+            if last_digit % 10 >= 5:
+                return num + (10-last_digit)
+            else:
+                return num - last_digit
+        round_a = helper_round_total(cost_a)
+        round_b = helper_round_total(cost_b)
+        round_c = helper_round_total(cost_c)
+        return round_a + round_b + round_c    
