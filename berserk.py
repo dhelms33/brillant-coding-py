@@ -1,3 +1,6 @@
+from sqlalchemy import Null
+
+
 class Berserk:
     
     def __init__(self, Guts, Casca, Griffith, Skull_knight):
@@ -12,6 +15,11 @@ class Berserk:
             return True 
         else:
             return False
+    def is_griffith(self, Griffith):
+        try:
+            if Griffith == Null or "No":
+                return("Guts smiling")
+        except 
         
 if __name__ == "__main__":
     user_input = input("Please choose an element of the manga Berserk:")
