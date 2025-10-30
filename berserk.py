@@ -19,7 +19,12 @@ class Berserk:
         try:
             if Griffith == Null or "No":
                 return("Guts smiling")
-        except 
+            else:
+                return("GRIFFITHHHHHH!!!")
+        except NameError:
+            return("What you entered is not defined")
+        finally:
+            return("Berserk mode: active")
         
 if __name__ == "__main__":
     user_input = input("Please choose an element of the manga Berserk:")
