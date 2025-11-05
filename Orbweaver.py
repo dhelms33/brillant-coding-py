@@ -27,3 +27,20 @@ class Orbweavers:
     def catch(prey, caught):
         caught = random(boolean)
         return(f"Caught " + {prey} + "successfully")
+    
+    def spiders_vs_hawks(hawks:int, spiders:int)->int:
+        try:
+            if hawks == 0:
+                return spiders
+            elif hawks == 1:
+                return spiders
+            elif hawks > 1: 
+                spiders = hawks-1
+                return spiders
+            else:
+                spiders = hawks-2
+                return spiders
+        except ValueError as e:
+            return("Please enter a positive number")
+        finally:
+            return("The spiders will rise again.")
