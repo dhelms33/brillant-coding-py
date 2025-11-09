@@ -25,6 +25,13 @@ class Berserk:
             return("What you entered is not defined")
         finally:
             return("Berserk mode: active")
+
+def is_eclipse(self,Skull_knight):
+    try: 
+        if Skull_knight != None and Skull_knight.lower() == ("skull knight".lower())
+    return True
+    except Skull_knight != "Skull knight".lower as ValueError:
+        return("Please enter skull knight to be a valid input"
         
 if __name__ == "__main__":
     user_input = input("Please choose an element of the manga Berserk:")
