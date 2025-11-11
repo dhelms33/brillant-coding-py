@@ -1,3 +1,6 @@
+from pickle import FALSE, TRUE
+
+
 class Arachnids:
     def __init__(self, species, description, venom, lethal):
         self.species = species 
@@ -17,5 +20,10 @@ class Arachnids:
                     return True
         return False 
     def is_scorpion(self, species):
-        is_scorpion = False
+        word_to_find = "scorpion"
+        if species.lower() == word_to_find:
+            return TRUE
+        else:
+            return FALSE
+        
         daily_arachnid 
