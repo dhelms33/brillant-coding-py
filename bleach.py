@@ -14,3 +14,9 @@ class Bleach:
         for char in self.main_chars:
             count_char+=1
         return count_char
+    
+    def calc_main_char(self.main_chars):
+        for char in range(len(self.main_chars)):
+            total += num_main_char(char)
+        return total
+    
