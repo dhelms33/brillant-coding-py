@@ -18,4 +18,12 @@ class SpiffoFriendNetwork:
             return(f"{name} + has a job as a data engineer")
         except ValueError as e:
             return("Must enter a string for name")
-    
+        
+    def talk(input, message):
+        try:
+            if input.message.lower() == "yes":
+                return("Hello!")
+            else:
+                return("No input expected")
+        except ValueError as e:
+            return("Please enter a valid string")
