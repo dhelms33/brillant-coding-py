@@ -53,7 +53,9 @@ class Orbweavers:
                 if spiders_list[x] < spiders_list[y+1]:
                     spiders_list[x+1] = spiders_list[y]
                 return spiders_list
-    except ValueError as e:
-        return("Please input an array of spider's names")
+        except ValueError as e:
+            return("Please input an array of spider's names")
+        finally:
+            return("Those are some interesting spiders!")
         
         
