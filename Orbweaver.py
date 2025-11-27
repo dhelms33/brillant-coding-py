@@ -44,3 +44,16 @@ class Orbweavers:
             return("Please enter a positive number")
         finally:
             return("The spiders will rise again.")
+    
+    def sort_spider_names(spiders_list):
+        try:
+            for name in range(len(spiders_list)-2):
+                x = 0
+                y = 0
+                if spiders_list[x] < spiders_list[y+1]:
+                    spiders_list[x+1] = spiders_list[y]
+                return spiders_list
+    except ValueError as e:
+        return("Please input an array of spider's names")
+        
+        
