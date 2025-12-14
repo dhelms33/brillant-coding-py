@@ -13,3 +13,10 @@ class Scorer:
             uppercase = True
             score *= 2
         return score
+    def calc_score_given_change(self.password, new_password):
+        score = 0
+        if len(self.password) != len(new_password):
+            if len(self.password) <= len(new_password):
+                score -= len(self.password)
+        return score
+    
