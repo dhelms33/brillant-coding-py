@@ -20,3 +20,14 @@ class Scorer:
                 score -= len(self.password)
         return score
     
+    def failed_login(self.password, attempt):
+        failed_login_attempts = 0
+        try:
+            if self.password == attempt:
+                return("Successful login!")
+            elif self.password != attempt:
+                failed_login_attempts += 1
+                return("Unsuccessful login")
+        except ValueError:
+            return("Please enter an acceptable password")
+    
