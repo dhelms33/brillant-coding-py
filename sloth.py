@@ -1,6 +1,6 @@
 import animal
 class Sloth:
-    def __init__(self, name, color, species, favorite_food):
+    def __init__(self, name, color, species, favorite_food, arr):
         self.name = name
         self.color = color
         self.species = species, 
