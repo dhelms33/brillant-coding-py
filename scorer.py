@@ -31,3 +31,11 @@ class Scorer:
         except ValueError:
             return("Please enter an acceptable password")
     
+def is_strong(self.password):
+    strong = False
+    if len(self.password) > 8:
+        strong = True
+        return strong
+    else:
+        strong = False
+        return strong
