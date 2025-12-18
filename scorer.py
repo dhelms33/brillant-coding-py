@@ -42,6 +42,6 @@ class Scorer:
         best_password = False
         new_password = ""
         for char in range(len(self.password)-2):
-            new_password += self.password[i] + self.password[i+1] + self.password[i-2]
+            new_password += self.password[char] + self.password[char+1] + self.password[char-2]
         return new_password
     
