@@ -1,6 +1,7 @@
 class Scorer:
-    def __init__(self, password):
+    def __init__(self, password, attempt):
         self.password = password
+        self.attempt = attempt
     
     def generate_score(self.password):
         score = 0
@@ -13,6 +14,7 @@ class Scorer:
             uppercase = True
             score *= 2
         return score
+    
     def calc_score_given_change(self.password, new_password):
         score = 0
         if len(self.password) != len(new_password):
@@ -20,14 +22,26 @@ class Scorer:
                 score -= len(self.password)
         return score
     
-    def failed_login(self.password, attempt):
+    def failed_login(self.password, self.attempt):
         failed_login_attempts = 0
         try:
-            if self.password == attempt:
+            if self.password == self.attempt:
                 return("Successful login!")
-            elif self.password != attempt:
+            elif self.password != self.attempt:
                 failed_login_attempts += 1
                 return("Unsuccessful login")
         except ValueError:
             return("Please enter an acceptable password")
+        
+    def login_success(self.password, self.attempt):
+        login_success = False
+        if self.password == self.attempt:
+            return("Login successful")
+        
+    def best_password(self.password):
+        best_password = False
+        new_password = ""
+        for char in range(len(self.password)-2):
+            new_password += self.password[i] + self.password[i+1] + self.password[i-2]
+        return new_password
     
