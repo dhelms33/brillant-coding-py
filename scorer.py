@@ -39,3 +39,8 @@ def is_strong(self.password):
     else:
         strong = False
         return strong
+    def is_complexity(self.password):
+        complexity = False
+        if '#' in self.password:
+            complexity = True
+        return complexity
