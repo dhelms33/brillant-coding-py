@@ -45,3 +45,14 @@ class Scorer:
             new_password += self.password[char] + self.password[char+1] + self.password[char-2]
         return new_password
     
+    def warning(self.password, self.attempt):
+        failed_attempts = 0
+        while failed_attempts <= 10:
+            if self.password != self.attempt:
+                failed_attempts += 1
+                if failed_attempts > 5:
+                    return("Warning", failed_attempts, "greater than 5!")
+                return failed_attempts
+            elif self.attempt == self.password:
+                return login_successs()
+        return failed_attempts
