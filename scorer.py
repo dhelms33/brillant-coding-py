@@ -50,9 +50,14 @@ class Scorer:
         while failed_attempts <= 10:
             if self.password != self.attempt:
                 failed_attempts += 1
-                if failed_attempts > 5:
+                if failed_attempts >= 5:
                     return("Warning", failed_attempts, "greater than 5!")
                 return failed_attempts
             elif self.attempt == self.password:
                 return login_successs()
         return failed_attempts
+    def is_locked(self.attempt, self.password, login_attempts):
+        is_locked = False
+        if failed_logins >= 10:
+            is_locked = True
+            return("Maximum login attempts reached")
