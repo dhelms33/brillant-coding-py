@@ -58,6 +58,7 @@ class Scorer:
         return failed_attempts
     def is_locked(self.attempt, self.password, login_attempts):
         is_locked = False
+        failed_logins = 0
         if failed_logins >= 10:
             is_locked = True
             return("Maximum login attempts reached")
