@@ -62,3 +62,7 @@ class Scorer:
         if failed_logins >= 10:
             is_locked = True
             return("Maximum login attempts reached")
+
+     def reset_password():
+        if is_locked() == True:
+            return("Sending reset password")
