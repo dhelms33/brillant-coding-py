@@ -32,6 +32,15 @@ class Sloth:
         if not swapped:
             break
         return ("Is it true that array is sorted ", swapped)
+    
+    def set_sloth_food(self):
+        fruits = ["grapes", "bananas", "blueberries", "strawberries", "apples"]
+        sloth_food = []
+        for food in range(5):
+            food = 0
+            sloth_food[food] += fruits[food]
+            food +=1
+        return sloth_food
 if __name__ == "__main__":
     user_input = input("Please use this to define the attributes, mainly the name, of the sloth")
     obj_instance = Sloth(user_input)
