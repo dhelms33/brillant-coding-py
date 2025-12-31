@@ -15,7 +15,11 @@ class Sloth:
         self.name = "Martin"
     
     def start_dancing(self):
-        return("Alright " + self.name + "is dancing!")
+        return("Alright " + self.name + "is dancing!, how unusual for a sloth!")
+    
+    def sloth_run(self):
+        is_run = False
+        return("sloths cannot run, so sloth_run is ", is_run)
     
     def bubble_sort_arr(self, arr):
         i, j = 0
@@ -27,10 +31,9 @@ class Sloth:
                 swapped = True
         if not swapped:
             break
-        return ("Is it true that array is sorted "
-                + swapped)
-    
+        return ("Is it true that array is sorted ", swapped)
 if __name__ == "__main__":
-    user_input = input("Please use this to define the attributes, mainly the name, of the slot")
+    user_input = input("Please use this to define the attributes, mainly the name, of the sloth")
     obj_instance = Sloth(user_input)
     dance_sloth = obj_instance.start_dancing()
+    run_sloth = obj_instance.sloth_run()
