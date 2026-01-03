@@ -66,3 +66,9 @@ class Scorer:
      def reset_password():
         if is_locked() == True:
             return("Sending reset password")
+    
+    def combine_passwords(self.password, self.attempt):
+        new_password = ""
+        for range in len(self.password, self.attempt):
+            new_password = [char1 + char2 for char1 + char2 in zip(self.password, self.attempt)]
+        return "".join(new_password)
