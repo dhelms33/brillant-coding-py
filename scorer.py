@@ -72,3 +72,8 @@ class Scorer:
         for range in len(self.password, self.attempt):
             new_password = [char1 + char2 for char1 + char2 in zip(self.password, self.attempt)]
         return "".join(new_password)
+    def is_old_password(self.password, previous_password):
+        if self.password == previous_password:
+            return True
+        else:
+            return False
