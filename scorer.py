@@ -77,3 +77,9 @@ class Scorer:
             return True
         else:
             return False
+    
+    def deny_old_password():
+        if is_old_password():
+            return("Old password detected, please input another password")
+        else:
+            return("New password confirmed")
