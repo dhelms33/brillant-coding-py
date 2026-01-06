@@ -21,4 +21,8 @@ class Security:
             return("account is not locked, try again")
         else: 
             is_lock = True
-            return()
+            return("account is locked sending reset password)
+
+    def reset_password(new_pwd, old_pwd):
+        if new_pwd == old_pwd:
+            return("Please enter a new password!")
