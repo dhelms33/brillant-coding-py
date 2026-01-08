@@ -30,4 +30,13 @@ class Lowlevel:
             self.register_a += 1
             result = self.register_a
         return result
-    
+    def jump(self.register_a, self.register_b):
+        jump = False
+        ending_register = 0
+        if self.register_a > self.register_b:
+            jump = True
+            ending_register = self.register_a
+            return("Jump successful ending register ", self.register_a)
+        else:
+            jump = False
+            return("Jump unsuccessful, try again")
