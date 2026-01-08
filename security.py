@@ -14,3 +14,15 @@ class Security:
                   self.score=5
         except ValueError as e:
             return(f"{e} is not an accepted character, please try again."
+
+    def is_account_locked(self.password, tries):
+        is_lock = False
+        if tries <= 5: 
+            return("account is not locked, try again")
+        else: 
+            is_lock = True
+            return("account is locked sending reset password)
+
+    def reset_password(new_pwd, old_pwd):
+        if new_pwd == old_pwd:
+            return("Please enter a new password!")
