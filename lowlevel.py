@@ -40,3 +40,11 @@ class Lowlevel:
         else:
             jump = False
             return("Jump unsuccessful, try again")
+    def multiply(self.register_a, num):
+        try:
+            result = 0
+            for i in range(num):
+                result = self.register_a + self.register_a
+            return result
+        except ValueError as e:
+            return("{e} results in a Value Error, try again")
