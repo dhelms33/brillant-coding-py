@@ -48,3 +48,13 @@ class Lowlevel:
             return result
         except ValueError as e:
             return("{e} results in a Value Error, try again")
+    def divide(self.register_a, num):
+        try:
+            while self.register_a > 0:
+                result = 0 
+                for i in range(num):
+                    result = self.register_a - self.register_a
+            return result
+        except ValueError as e:
+            return("{e} is a number that is equal to or less than zero, please try again.")
+    
