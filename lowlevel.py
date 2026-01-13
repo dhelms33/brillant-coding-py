@@ -57,4 +57,14 @@ class Lowlevel:
             return result
         except ValueError as e:
             return("{e} is a number that is equal to or less than zero, please try again.")
+    def bitwise_and(self.register_a, self.register_b):
+        if self.register_a == 1 and self.register_b == 1:
+            return 1
+        else:
+            return 0
+    def bitwise_or(self.register_a, self.register_b):
+        if self.register_a == 1 or self.register_b == 1:
+            return 1
+        else:
+            return 0
     
