@@ -1,3 +1,4 @@
+import logging
 class Lowlevel:
     def __init__(self, register_a, register_b):
         self.register_a = register_a
@@ -49,13 +50,20 @@ class Lowlevel:
         except ValueError as e:
             return("{e} results in a Value Error, try again")
     def divide(self.register_a, num):
+        result = 0
+        LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
+        logging.basicConfig(filename = "E:\\pyhton\\Lumberjack.log",
+                            level = logging.DEBUG,
+                            format = LOG_FORMAT)
+        logger = logging.getLogger
+        logging
         try:
             while self.register_a > 0:
-                result = 0 
                 for i in range(num):
                     result = self.register_a - self.register_a
             return result
         except ValueError as e:
+            logger.
             return("{e} is a number that is equal to or less than zero, please try again.")
     def bitwise_and(self.register_a, self.register_b):
         if self.register_a == 1 and self.register_b == 1:

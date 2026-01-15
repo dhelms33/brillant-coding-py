@@ -83,3 +83,5 @@ class Scorer:
             return("Old password detected, please input another password")
         else:
             return("New password confirmed")
+    def send_sms():
+        
