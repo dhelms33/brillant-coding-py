@@ -17,12 +17,13 @@ class Security:
         try:
             special_char = ["&", "#", "$"]
             if len(self.password) >= 10 and contains special_char:
-                             self.score = 10
+                self.score = 10
                 return(self.score)
-             else: 
-                  self.score=5
+            else: 
+                self.score=5
+                return(self.score)
         except ValueError as e:
-            return(f"{e} is not an accepted character, please try again."
+            return(f"{e} is not an accepted character, please try again.")
 
     def is_account_locked(self.password, tries):
         is_lock = False
@@ -30,7 +31,7 @@ class Security:
             return("account is not locked, try again")
         else: 
             is_lock = True
-            return("account is locked sending reset password)
+            return("account is locked sending reset password")
 
     def reset_password(new_pwd, old_pwd):
         if new_pwd == old_pwd:
