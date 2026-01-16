@@ -1,8 +1,17 @@
+import cryptography.fernet import Fernet
 class Security:
-    def__init__(self, password, strength, score):
+    def __init__(self, password, strength, score):
         self.password = password
         self.strength = strength
         self.score = score
+    
+    def generate_key():
+        key = Fernet.generate_key()
+        return key 
+    def encrypt_pass(self.password):
+        f = Fernet(new_key)
+        enc_pass = f.encrypt(self.password)
+        return enc_pass
 
     def assign_score(self.password):
         try:
@@ -26,3 +35,8 @@ class Security:
     def reset_password(new_pwd, old_pwd):
         if new_pwd == old_pwd:
             return("Please enter a new password!")
+    def manual_enc(self.password):
+        encrypted_result = "" 
+        for char in text:
+            if 'a' <= char <= 'z':
+                encrypted += char(ord(char)-ord('a')+ shift) % 26 + ord('a'))
