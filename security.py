@@ -36,6 +36,16 @@ class Security:
     def reset_password(new_pwd, old_pwd):
         if new_pwd == old_pwd:
             return("Please enter a new password!")
+        
+    def send_SMS(phone_number):
+        prompt = "Please enter your phone number "
+        try:
+            if (len(phone_number) > 1) and is_account_locked:
+                return(prompt, + "message sent")
+        except ValueError as {e}:
+            return("This is not a valid phone number, try again.")
+                
+        if len
     def manual_enc(self.password):
         encrypted_result = "" 
         for char in text:
