@@ -1,10 +1,10 @@
 class TheAmazingDigitalCircus:
-    def __init__(self, Ponmi, Jax, Zooble, Caine, existing_players):
+    def __init__(self, Ponmi, Jax, Zooble, Caine, humans):
         self.Ponmi = Ponmi
         self.Jax = Jax
         self.Zooble = Zooble
         self.Caine = Caine
-        self.existing_players = []
+        humans = ["kinger", "jax", "pomni", "ragatha", "zooble", "gangle"]
 
     def is_new(player: str, new: bool) -> bool:
         try:
@@ -44,7 +44,14 @@ class TheAmazingDigitalCircus:
             if (not is_isolating) and human != jax:
                 return True
         return False
-
+    def height_ranking(self.humans):
+        tallest = ""
+        smallest = ""
+        heights = {"Jax":1.62, "Gangle":.62, "Zooble":1.45}
+        for name in range(len(heights)):
+            for height in range(len(heights)):
+                if heights[0] > height[1]:
+                    tallest = heights[0][1]
 if __name__ == ""__main__"":
     ui_Pomni = input("Please input anything you know relating to Pomni")
     obj_instance = The amazing digital circus(ui_Pomni)
