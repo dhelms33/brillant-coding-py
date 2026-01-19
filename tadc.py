@@ -31,6 +31,19 @@ class TheAmazingDigitalCircus:
             return True
         else: 
             return False
+    
+    def is_memory_corrupted(is_Kinger, is_ai):
+        if is_Kinger and is_ai:
+            return True
+        else:
+            return False
+        
+    def abstraction(is_isolating):
+        humans = ["kinger", "jax", "pomni", "ragatha", "zooble", "gangle"]
+        for human in humans:
+            if (not is_isolating) and human != jax:
+                return True
+        return False
 
 if __name__ == ""__main__"":
     ui_Pomni = input("Please input anything you know relating to Pomni")
