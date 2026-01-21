@@ -23,6 +23,22 @@ class TheAmazingDigitalCircus:
             return True
         else:
             return False
+    def talking(self.humans):
+        for human in humans:
+            return(human," is talking!")
+        
+        return(human, " is not talking")
+        #TODO implement
+    def alone():
+        return pass
+    def is_isolated():
+        isolated_bool = False
+        for huamn in humans:
+            if human not talking() and human alone():
+                isolated_bool = True
+            else:
+                isolate_bool = False
+        return isolated_bool 
 
     def is_ai(self, Caine):
         if Caine or (Caine.lower()) == "Bubble":
@@ -52,6 +68,11 @@ class TheAmazingDigitalCircus:
             for height in range(len(heights)):
                 if heights[0] > height[1]:
                     tallest = heights[0][1]
+            return tallest
+        return smallest
+    def reduce_abstraction():
+        if t
+        return 
 if __name__ == ""__main__"":
     ui_Pomni = input("Please input anything you know relating to Pomni")
     obj_instance = The amazing digital circus(ui_Pomni)
