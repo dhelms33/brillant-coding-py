@@ -1,9 +1,10 @@
 class TheAmazingDigitalCircus:
-    def __init__(self, Ponmi, Jax, Zooble, Caine, humans):
+    def __init__(self, Ponmi, Jax, Zooble, Caine, group humans):
         self.Ponmi = Ponmi
         self.Jax = Jax
         self.Zooble = Zooble
         self.Caine = Caine
+        self.is_group = True
         humans = ["kinger", "jax", "pomni", "ragatha", "zooble", "gangle"]
 
     def is_new(player: str, new: bool) -> bool:
@@ -27,12 +28,14 @@ class TheAmazingDigitalCircus:
         for human in humans:
             return(human," is talking!")
         
-        return(human, " is not talking")
+        return( " This member of the cast is not talking")
         #TODO implement
-    def alone():
-        return pass
-    def is_isolated():
-        isolated_bool = False
+    def is_alone(self.is_group):
+        if not self.is_group:
+            return True
+        return False
+    def is_isolated(self.is_group):
+        isolated_bool = not self.is_group and 
         for huamn in humans:
             if human not talking() and human alone():
                 isolated_bool = True
@@ -48,6 +51,14 @@ class TheAmazingDigitalCircus:
         else: 
             return False
     
+    def is_listening(self.humans, Caine):
+        if is_ai():
+            return True
+        elif self.Jax:
+            return("Stop listening Jax.")
+        else:
+            return("Who are you?")   
+        
     def is_memory_corrupted(is_Kinger, is_ai):
         if is_Kinger and is_ai:
             return True
