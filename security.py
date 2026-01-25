@@ -51,3 +51,11 @@ class Security:
         for char in text:
             if 'a' <= char <= 'z':
                 encrypted += char(ord(char)-ord('a')+ shift) % 26 + ord('a'))
+    
+    def login_allowed():
+        locked = True
+        is_unlocked = locked == False
+        if is_unlocked:
+            return True
+        else:
+            return False
