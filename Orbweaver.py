@@ -57,5 +57,11 @@ class Orbweavers:
             return("Please input an array of spider's names")
         finally:
             return("Those are some interesting spiders!")
-        
-        
+
+    def find_spider(is_corner, is_web):
+        if is_corner:
+            return("The spider is in the corner!")
+        elif is_web:
+            return("The spider is in the web!")
+        else:
+            return("That is a wandering spider!")
