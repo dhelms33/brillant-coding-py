@@ -27,3 +27,9 @@ class SpiffoFriendNetwork:
                 return("No input expected")
         except ValueError as e:
             return("Please enter a valid string")
+
+    def is_followed():
+        if is_follow_clicked:
+            return True
+        else:
+            return False
