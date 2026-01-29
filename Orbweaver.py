@@ -65,3 +65,8 @@ class Orbweavers:
             return("The spider is in the web!")
         else:
             return("That is a wandering spider!")
+
+    def spin_web():
+        for thread in range(10):
+            print("spinning!")
+        return("web complete!")
