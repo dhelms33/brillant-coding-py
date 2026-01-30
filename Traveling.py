@@ -26,4 +26,15 @@ class Traveling:
         round_a = helper_round_total(cost_a)
         round_b = helper_round_total(cost_b)
         round_c = helper_round_total(cost_c)
-        return round_a + round_b + round_c    
+        return round_a + round_b + round_c 
+
+    def is_sleeping():
+        if is_hotel and is_unconscious:
+            return True
+        else:
+            return False
+    def give_rating():
+        if is_michelin:
+            return("5 stars")
+        elif 4_star_reviews >= 50:
+            return("4 stars") 
