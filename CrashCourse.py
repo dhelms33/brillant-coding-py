@@ -22,3 +22,9 @@ class CrashCourse:
             if value >= 1:
                 globe += 1
         return globes
+    
+    def count_supply():
+        supply_count = 0
+        for supply in range(10):
+            supply_count += 1
+        return supply_count
