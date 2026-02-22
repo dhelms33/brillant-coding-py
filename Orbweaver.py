@@ -70,3 +70,13 @@ class Orbweavers:
         for thread in range(10):
             print("spinning!")
         return("web complete!")
+    
+    def catch_prey(prey):
+        caught_prey = []
+        meal = 0
+        if spin_web:
+            for prey in caught_prey:
+                meal +=1
+            return meal
+        return meal
+    
